@@ -1,12 +1,12 @@
 # Icefire
 
-Ülesande lahendasin kasutades sümbolite numbrilisi väärtusi. Int massiiv nimega scann (nime valisin sellise, kuna koodis leidus Scanner elemente ja scann muutuja kasutamine oleks paremini peidetav) sisaldab minu ees ja perekonna nime, otsuse (kas on sisestatud minu nimi?) väärtust ja suvalisi arve.
+Ülesande lahendasin kasutades sümbolite numbrilisi väärtusi. Int massiiv nimega scann (nime valisin sellise, kuna koodis leidus Scanner elemente ja scann muutuja kasutamine on kergemini peidetav) sisaldab minu ees ja perekonna nime, otsuse (kas on sisestatud minu nimi?) väärtust ja suvalisi arve.
 
 | 15 | 27 | 14 | 14 | 20 | 14 | 31 | 18 | 23 | 35 | 16 |
 | --- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:| ---:|
 | RAND  | R | E | E | K | E | V | I | N | OTSUS | RAND |
 
-Nime järjekord on vahetatud, et teha keerulisemaks nime välja lugemiseks. Nime võib sisestada nii suurte kui väikeste tähtedega. Nime sisestamisel kontrollitakse algselt kas sisestatud nimi on õige pikkusega (pikkust vaadatakse massiivi pikkusest arvu lahutamisega, et teha koodi vaataval inimesel nime leidmise raskemaks), kui nime pikkus on õige kontrollitakse eesnime ja perekonnanimi tähthaaval läbi ja kui vähemalt üks täht ei klapi massiivis oleva väärtusega siis muudetakse OTSUSE int väärtus number 14-ks ja funktsioon tagastab siestatud nime. Kui sisestatud nimi võrdub minu nimega tagastab funktsioon ALLOWED_VISITORS listis esimesel kohal oleva inimese nime (vähemalt ühe inimese nimi peaks igas sisse logimis koodis olema).
+Nime järjekord on vahetatud, et teha veelgi keerulisemaks nime välja lugemist. Nime võib sisestada nii suurte kui väikeste tähtedega. Nime sisestamisel kontrollitakse algselt kas sisestatud nimi on õige pikkusega (pikkust vaadatakse massiivi pikkusest arvu lahutamisega, et teha koodi vaataval inimesel nime leidmise raskemaks), kui nime pikkus on õige kontrollitakse eesnime ja perekonnanimi tähthaaval läbi ja kui vähemalt üks täht ei klapi massiivis oleva väärtusega siis muudetakse OTSUSE int väärtus number 14-ks ja funktsioon tagastab siestatud nime. Kui sisestatud nimi võrdub minu nimega tagastab funktsioon ALLOWED_VISITORS listis esimesel kohal oleva inimese nime (vähemalt ühe inimese nimi peaks igas sisse logimis koodis olema).
 
 ```java
  private String getFullName(String firstName, String lastName) {
