@@ -1,6 +1,6 @@
 # Icefire
 
-Ülesande lahendasin kasutades sümbolite numbrilisi väärtusi. Int massiiv nimega scann (nime valisin sellise, kuna koodis leidus Scanner elemente ja scann muutuja kasutamine on kergemini peidetav) sisaldab minu ees ja perekonna nime, otsuse (kas on sisestatud minu nimi?) väärtust ja suvalisi arve.
+Ülesande lahendasin kasutades sümbolite numbrilisi väärtusi. Int massiiv nimega scan (nime valisin sellise, kuna koodis leidus Scanner elemente ja scann muutuja kasutamine on kergemini peidetav) sisaldab minu ees ja perekonna nime, otsuse (kas on sisestatud minu nimi?) väärtust ja suvalisi arve.
 
 | 15 | 27 | 14 | 14 | 20 | 14 | 31 | 18 | 23 | 35 | 16 |
 | --- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:| ---:|
@@ -11,24 +11,24 @@ Nime järjekord on vahetatud, et teha veelgi keerulisemaks nime välja lugemist.
 ```java
  private String getFullName(String firstName, String lastName) {
     	  //Hidden name, decision int and random numbers
-	      int[] scann ={15,27,14,14,20,14,31,18,23,35,16}; 
+	      int[] scan ={15,27,14,14,20,14,31,18,23,35,16}; 
 
 	      //If the input name length equals my names length then check for my name
-	      if (firstName.length() == scann.length-6 && lastName.length() == scann.length-8) {
+	      if (firstName.length() == scan.length-6 && lastName.length() == scan.length-8) {
 	    	  //Check my first name letter by letter
-	    	  for (int i = 1; i < scann.length-5; i++) {
+	    	  for (int i = 1; i < scan.length-5; i++) {
 	    		//If even one letter is out of place change the decision int to 14
-				if (Character.getNumericValue(firstName.charAt(i-1)) != scann[i+3])  scann[9] = 14;
+				if (Character.getNumericValue(firstName.charAt(i-1)) != scan[i+3])  scan[9] = 14;
 	    	  	}
 	    	  //Check my last name letter by letter
-	    	  for (int i = 1; i < scann.length-7; i++) {
-				if (Character.getNumericValue(lastName.charAt(i-1)) != scann[i]) scann[9] = 14;
+	    	  for (int i = 1; i < scan.length-7; i++) {
+				if (Character.getNumericValue(lastName.charAt(i-1)) != scan[i]) scan[9] = 14;
 		    	}
-	      } else scann[9] = 14;
+	      } else scan[9] = 14;
 	      
 	      //If input is my name then return the first name from the ALLOWED list
 	      //If input is not my name then return the input name
-	      if (scann[9] == 14) {
+	      if (scan[9] == 14) {
 			return firstName + " " + lastName;
 		} else return ALLOWED_VISITORS.get(0);
     }
