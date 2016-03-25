@@ -1,6 +1,6 @@
 # Icefire
 
-Ülesande lahendasin kasutades sümbolite numbrilisi väärtusi. Int massiiv nimega scan (nime valisin sellise, kuna koodis leidus Scanner elemente ja scann muutuja kasutamine on kergemini peidetav) sisaldab minu ees ja perekonna nime, otsuse (kas on sisestatud minu nimi?) väärtust ja suvalisi arve.
+Ülesande lahendasin kasutades sümbolite numbrilisi väärtusi. Int massiiv nimega scan (nime valisin sellise, kuna koodis leidus Scanner elemente ja scan muutuja kasutamine on kergemini peidetav) sisaldab minu ees ja perekonna nime, otsuse (kas on sisestatud minu nimi?) väärtust ja suvalisi arve.
 
 | 15 | 27 | 14 | 14 | 20 | 14 | 31 | 18 | 23 | 35 | 16 |
 | --- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:| ---:|
